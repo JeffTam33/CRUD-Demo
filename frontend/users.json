@@ -1,0 +1,78 @@
+[
+  {
+    "username": "john123", 
+    "password": "CrabApples1234", 
+    "email": "CrabApple123@gmail.com", 
+    "firstName": "John", 
+    "lastName": "Smith", 
+    "age": 32,
+    "phoneNum": "301-888-8888", 
+    "dentistry": "J Dentistry", 
+    "dentalIn": ["Delta Dental"],
+    "role": "client",
+    "appointments": [
+      {
+        "type": "Cleaning",
+        "date": "09/09/2023",
+        "time": "9:00 am"
+      },
+      {
+        "type": "Teeth Whitening",
+        "date": "10/32/2023",
+        "time": "12:00 pm"
+      }
+    ]
+  },
+
+  {
+    "username": "amanda123", 
+    "password": "CrabLegs1234", 
+    "email": "Amanda12@gmail.com", 
+    "firstName": "Amanda", 
+    "lastName": "Lo", 
+    "age": 25,
+    "phoneNum": "301-222-3333", 
+    "dentistry": "J Dentistry", 
+    "dentalIn": ["Cigna Dental"],
+    "role": "client",
+    "appointments": [
+      {
+        "type": "Cleaning",
+        "date": "09/09/2023",
+        "time": "9:00 am"
+      },
+      {
+        "type": "Teeth Whitening",
+        "date": "10/32/2023",
+        "time": "12:00 pm"
+      }
+    ]
+  },
+
+  
+  {
+    "username": "c", 
+    "password": "CrabLegs1234", 
+    "email": "c@gmail.com", 
+    "firstName": "Amanda", 
+    "lastName": "Lo", 
+    "age": 25,
+    "phoneNum": "301-222-3333", 
+    "dentistry": "J Dentistry", 
+    "dentalIn": ["Cigna Dental"],
+    "role": "client",
+    "appointments": [
+      {
+        "type": "Cleaning",
+        "date": "09/09/2023",
+        "time": "9:00 am"
+      },
+      {
+        "type": "Teeth Whitening",
+        "date": "10/32/2023",
+        "time": "12:00 pm"
+      }
+    ]
+  }
+
+]

@@ -1,0 +1,260 @@
+#login_content {
+  height: 65vh;
+  width: 100%;
+  color: #242424;
+}
+
+#login_wrapper { 
+  height: 50vh;
+  width: 40vw;
+  margin: auto;
+  margin-top: 10vh;
+  background-color: white;
+  box-shadow: 3px 3px 0px black;
+  border: 1px solid black;
+  border-radius: 25px;
+  transition: 200ms;
+}
+
+#login_wrapper:hover {
+  transform: translateX(3px);
+  transform: translateY(3px);
+  box-shadow: 0px 0px 0px black;
+}
+
+#login_header {
+  margin: 25%;
+  font-weight: 700;
+}
+
+.account_links {
+  color: black;
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.account_links:hover {
+  color: #2196F3;
+}
+
+#forgot_password_wrapper {
+  height: 10vh;
+  width: 10vw;
+  background-color: #2196F3;
+}
+
+#create_account_wrapper {
+  height: 3vh;
+  width: 15vw;
+  margin: auto;
+  margin-top: 3vh;
+  text-align: center;
+  background-color: #87d5e1;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  box-shadow: 3px 3px 0px black;
+  border: 1px solid black;
+  border-radius: 25px;
+  transition: 200ms;
+}
+
+#create_account_wrapper:hover {
+  transform: translateX(4px);
+  transform: translateY(4px);
+  box-shadow: 0px 0px 0px black;
+}
+
+.user_inputs {
+  margin-left: 25%;
+  height: 3vh;
+  border-radius: 5px;
+  font-size: 18px;
+  background-color: white;
+  color: black;
+  width: 50%;
+  font-family: 'Roboto', sans-serif;
+}
+
+#login_button_wrapper {
+  height: 4vh;
+  width: 4vw;
+  margin: auto;
+}
+
+#login_button {
+  height: 4vh;
+  width: 4vw;
+  border-radius: 99px;
+  background-color: #87d5e1;
+  color: black;
+  border: 1px solid black;
+  box-shadow: 3px 3px 0px black;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 200ms;
+}
+
+#login_button:active {
+  transform: translateX(4px);
+  transform: translateY(4px);
+  box-shadow: 0px 0px 0px black;
+}
+
+#authenticator_login {
+  display: flex;
+  height: 10vh;
+  width: 90%;
+  margin: auto;
+  margin-top: 1vh;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 9px;
+}
+
+.brand_icons {
+  height: 3vh;
+  width: 3vh;
+  margin: auto;
+  border-radius: 999px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.auth_button {
+  background-color: white;
+  font-size: 40px;
+  border: none;
+  cursor: pointer;
+}
+
+.auth_button:hover {
+  background-color: gray;
+  border-radius: 100px;
+  transition: 300ms;
+}
+
+#login_title_wrapper {
+  height: 4vh;
+  width: 100%;
+  margin: 1vh auto auto auto;
+  text-align: center;
+  font-size: 30px;
+}
+
+.error_inputs_empty {
+  margin-left: 25%;
+  height: 3vh;
+  border-radius: 5px;
+  font-size: 18px;
+  background-color: white;
+  color: black;
+  width: 50%;
+  font-family: 'Roboto', sans-serif;
+  border: 2px solid red;
+}
+
+.warning_icon {
+  visibility: visible;
+  font-size: 30px;
+  margin-left: 1vw;
+  color: #2196F3;
+}
+
+.input_cotainer {
+  display: flex;
+  height: 4vh;
+  width: 100%;
+}
+
+#email:focus {
+  outline: none;
+}
+
+#password_input_wrapper {
+  display: flex;
+  margin-left: 25%;
+  height: 3.7vh;
+  width: 50%;
+  font-size: 18px;
+  background-color: white;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  border-width: 2px;
+  border-style: inset;
+  border-color: rgb(118, 118, 118);
+  border-radius: 6px;
+}
+
+#password {
+  height: 3.5vh;
+  width: 90%;
+  margin-left: 0;
+  border: none;
+}
+
+#password:focus {
+  outline: none;
+}
+
+#visible_password_icon {
+  display: block;
+  height: 4vh;
+  width: 10%;
+  cursor: pointer;
+  font-size: 24px;
+  text-align: center;
+  transition: 200ms;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  padding: 5px 0;
+  border: 1px solid black;
+  border-radius: 6px;
+
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 14px;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+#warning_info {
+  height: 1vh;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+}

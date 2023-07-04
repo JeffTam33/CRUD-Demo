@@ -1,0 +1,134 @@
+#schedule_content {
+  display: flex;
+  background-color: #2596be;
+  height: 80vh;
+  width: 100%;
+  color: black;
+  text-align: center;
+}
+
+#schedule_wrapper {
+  margin: auto;
+  height: 50vh;
+  width: 35vw;
+  background-color: white;
+  border: 1px solid black;
+  box-shadow: 6px 6px 0px black;
+  border-radius: 25px;
+  color: #254abe;
+  transition: 200ms;
+}
+
+#schedule_wrapper:hover {
+  transform: translateX(3px);
+  transform: translateY(3px);
+  box-shadow: 0px 0px 0px black;
+}
+
+.user_inputs {
+  height: 5vh;
+  border-radius: 5px;
+  font-size: 18px;
+  background-color: white;
+  color: black;
+  width: 50%;
+  font-family: 'Roboto', sans-serif;
+}
+
+#schedule_header {
+  font-size: 30px;
+}
+
+#birthday_user_input {
+  margin: auto;
+  height: 10vh;
+  width: 80%;
+}
+
+#month_schedule {
+  height: 6vh;
+  width: 100%;
+}
+
+#months {
+  height: 6vh;
+  width: 70%;
+  font-size: 18px;
+  border-radius: 9px;
+  background-color: white;
+  color: black;
+}
+
+#digit_schedule {
+  height: 6vh;
+  width: 100%;
+}
+
+#digit_schedule {
+  height: 6vh;
+  width: 20vh;
+  margin: auto;
+}
+
+#digit_option {
+  height: 6vh;
+  width: 70%;
+  font-size: 18px;
+  border-radius: 9px;
+  background-color: white;
+  color: black;
+}
+
+#month_container {
+  float: left;
+  height: 100%;
+  width: 32%;
+}
+
+#day_container {
+  height: 100%;
+  width: 33%;
+  float: left;
+}
+
+#year_container {
+  float: left;
+  height: 100%;
+  width: 33%;
+}
+
+#time_container {
+  height: 15vh;
+  width: 80%;
+  margin: auto;
+  margin-top: 3vh;
+}
+
+#submit {
+  height: auto;
+  width: 100px;
+  margin: auto;
+  margin-top: 1vh;
+}
+
+#schedule_submit {
+  height: 4vh;
+  width: 6vw;
+  background-color: #2596be;
+  border-radius: 10px;
+  box-shadow: 1px 4px 1px black;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: 200ms;
+}
+
+#schedule_submit:hover {
+  transform: translateX(3px);
+  transform: translateY(3px);
+  box-shadow: 0px 0px 0px black;
+}
+
+#time_title {
+  font-size: 24px;
+  width: 100%;
+}

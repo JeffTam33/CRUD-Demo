@@ -1,0 +1,57 @@
+
+.in_link {
+  color: black
+}
+
+.in_link:hover {
+  color: black
+}
+
+#appointment_content {
+  height: auto;
+  width: 100%;
+  margin: auto;
+  background-color: #254abe;
+  color: black;
+}
+  
+#appointment_list {
+  display: block;
+  height: auto;
+  display: grid;
+  grid-template-columns: auto auto;
+  box-shadow: 3px 3px 3px black;
+  border: 1px solid black;
+  border-radius: 25px;
+  transition: 200ms;
+}
+
+#appointment_list:hover {
+  transform: translateX(4px);
+  transform: translateY(4px);
+  box-shadow: 0px 0px 0px black;
+}
+
+#appointment_container {
+  font-size: 20px;
+  color: white;
+}
+
+#appointment_content {
+  background-color: white;
+}
+
+#appointment_insurance {
+  display: flex;
+  height: auto;
+  width: auto;
+  margin-left: 25%;
+}
+
+#appointment_list {
+  height: 30vh;
+  width: 50vw;
+  background-color: #2febbe;
+  border-radius: 10px;
+  margin-bottom: 5vh;
+}

@@ -1,0 +1,255 @@
+#signup_content {
+  display: flex;
+  background-color: #2596be;
+  height: 110vh;
+  width: 100%;
+  color: black;
+}
+
+#signup_wrapper {
+  margin: auto;
+  height: 98vh;
+  width: 35vw;
+  margin-top: 2vh;
+  background-color: white;
+  border: 1px solid black;
+  box-shadow: 6px 6px 0px black;
+  border-radius: 25px;
+  color: #254abe;
+  transition: 200ms;
+}
+
+#signup_wrapper:hover {
+  transform: translateX(3px);
+  transform: translateY(3px);
+  box-shadow: 0px 0px 0px black;
+}
+
+#authenticator_login {
+  height: 10%;
+  width: 80%;
+  margin: auto;
+}
+
+#manual_create {
+  height: 71vh;
+  width: 80%;
+  margin: auto;
+}
+
+.header_input {
+  margin-left: 25%;
+}
+
+.user_inputs {
+  margin-left: 25%;
+  height: 3vh;
+  border-radius: 5px;
+  font-size: 18px;
+  background-color: white;
+  color: black;
+  width: 50%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.warning_icon {
+  visibility: hidden;
+  height: 2vh;
+  width: 2vh;
+  margin-left: 1vw;
+  border-radius: 10px;
+  font-weight: 800;
+  font-size: 26px;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  padding: 5px 0;
+  border: 1px solid black;
+  border-radius: 6px;
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 14px;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.user_inputs_empty {
+  margin-left: 25%;
+  height: 3vh;
+  border-radius: 5px;
+  font-size: 18px;
+  background-color: white;
+  color: black;
+  width: 50%;
+  font-family: 'Roboto', sans-serif;
+  border-color: red;
+}
+
+.user_inputs_empty:focus {
+  border-color: black;
+}
+
+.birthday_header {
+  margin-left: 25%;
+}
+
+#dob_header {
+  margin-left: 0%;
+  font-size: 20px;
+}
+
+#birthday_user_input {
+  height: 6vh;
+  width: 100%;
+}
+
+#month_signup {
+  height: 6vh;
+  width: 100%;
+}
+
+#months {
+  height: 4vh;
+  width: 60%;
+  font-size: 18px;
+  border-radius: 9px;
+  background-color: white;
+  color: black;
+}
+
+.birthday_wrapper {
+  margin: auto;
+  height: 100%;
+  width: 32%;
+  float: left;
+}
+
+#birthday_signup {
+  height: 5vh;
+}
+
+#password_rule_container {
+  height: 10vh;
+  width: 100%;
+}
+
+#error_rule {
+  height: 8vh;
+}
+
+.check_list {
+  float : left;
+  width: 100%;
+  margin-left: 2vh;
+}
+
+#password_rule_container {
+  height: 12vh;
+}
+
+#submit {
+  height: auto;
+  width: 100px;
+  margin: auto;
+  margin-top: 1vh;
+}
+
+#signup_submit {
+  height: 4vh;
+  width: 6vw;
+  background-color: #2596be;
+  border-radius: 10px;
+  box-shadow: 1px 4px 1px black;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: 200ms;
+}
+
+#signup_submit:hover {
+  transform: translateX(3px);
+  transform: translateY(3px);
+  box-shadow: 0px 0px 0px black;
+}
+
+#phone_number_container {
+  height: 2vh;
+  width: 250px;
+  margin: auto;
+  margin-top: 3vh;
+  margin-bottom: 2vh;
+}
+
+#phoneNumber {
+  height: 2vh;
+  width: 250px;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+}
+
+#phone_number_err_tooltip {
+  height: 2vh;
+  width: 20vw;
+  visibility: hidden;
+}
+
+#login_title_wrapper {
+  height: 3vh;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  font-size: 26px;
+}
+
+#authenticator_login_container {
+  display: flex;
+  height: 4vh;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+.brand_icons {
+  margin: auto;
+}
+
+.auth_button {
+  height: 5vh;
+  width: 5vh;
+  font-size: 30px;
+  margin-top: 10px;
+  background-color: white;
+  border-radius: 99px;
+  cursor: pointer;
+}

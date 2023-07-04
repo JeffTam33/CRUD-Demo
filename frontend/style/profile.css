@@ -1,0 +1,269 @@
+#profile {
+  display: flex;
+  height: auto;
+  width: 100%;
+  background-color: white;
+}
+
+#profile_wrapper {
+  display: grid;
+  margin: 2vh auto 2vh auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 0px;
+}
+
+#user_profile {
+  height: 60vh;
+  width: 30vw;
+  background-color: #2596be;
+  border: 1px solid black;
+  box-shadow: 3px 3px 0px black;
+  border-radius: 10px;
+  margin-left: 1vw;
+  transition: 200ms;
+}
+
+#user_profile:hover {
+  transform: translateX(3px);
+  transform: translateY(3px);
+  box-shadow: 0px 0px 0px black;
+}
+
+#assignments {
+  display: flex;
+  height: 90vh;
+  width: 30vw;
+  background-color: #2596be;
+  box-shadow: 3px 3px 0px black;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+#user_basic_info {
+  height: 10vh;
+  width: 95%;
+  margin: 10px auto;
+  border: solid black 2px;
+  border-radius: 10px;
+}
+
+#name_wrapper {
+  float: left;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.profile_names {
+  float: left;
+  clear: left;
+}
+
+#user_profile_pic {
+  float: right;
+  height: 75px;
+  width: 75px;
+  margin: 7px 7px 0px 0px;
+  border: 1 solid black;
+  border-radius: 10px;
+  line-height: 75px;
+  text-align: center;
+  color: black;
+}
+
+#user_detailed_info {
+  display: flex;
+  height: 50%;
+  width: 100%;
+  margin: 10px auto;
+  font-size: 20px;
+  line-height: 45px;
+}
+
+#appointment_profile {
+  display: inline;
+  height: 60vh;
+  width: 66vw;
+  background-color: #25be9a;
+  box-shadow: 3px 3px 0px black;
+  border: 1px solid black;
+  border-radius: 10px;
+  transition: 200ms;
+}
+
+#appointment_profile:hover {
+  transform: translateX(3px);
+  transform: translateY(3px);
+  box-shadow: 0px 0px 0px black;
+}
+
+.profile_heading {
+  margin: 25px;
+  font-size: 32px;
+}
+
+#appointment_header_profile_wrapper {
+  height: 30px;
+  width: 100%;
+  font-size: 32px;
+  margin-top: 10px;
+  text-indent: 10px;
+}
+
+#appointment_list_wrapper {
+  height: 46vh;
+  width: 100%;
+  margin: auto;
+  float: right;
+  overflow: auto;
+}
+
+#appointment_list_wrapper::-webkit-scrollbar {
+  height: .5vh;
+  width: .5vw;
+  background-color: #25be9a;
+}
+
+#appointment_list_wrapper::-webkit-scrollbar-thumb {
+  height: 1vh;
+  width: .5vw;
+  background-color: #254abe;
+  border-radius: 99px;
+}
+
+.appointment_card {
+  height: 5vh;
+  width: 100%;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 100px;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+  font-size: 25px;
+}
+
+.appointment_titles {
+  height: 3vh;
+  width: auto;
+  font-size: 25px;
+  text-indent: 9px;
+}
+
+#appointment_title_card {
+  height: 3vh;
+  width: 99%;;
+  margin: auto;
+  background-color: white;
+  color: #757876;
+  border-radius: 10px;
+  box-shadow: inset 1px 1px 9px rgba(0, 0, 0, 0.5);
+}
+
+.appointment_card {
+  display: block;
+  width: 99%;
+  margin: auto;
+  margin-top: 1vh;
+  background: white;
+  color: black;
+  border-radius: 5px;
+  box-shadow: 4px 5px 9px rgba(0, 0, 0, 0.5);
+
+}
+
+#appointment_status {
+  height: 5vh;
+  width: 4%;
+  float: left;
+  border: 1px solid black;
+  border-radius: 5px 0px 0px 5px;
+  box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+#appointment_status_shape {
+  margin-top: 1vh;
+}
+
+#appointment_service_title {
+  height: 5vh;
+  width: 15%;
+  float: left;
+  border: 1px solid black;
+  box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+#appointment_date_title {
+  height: 5vh;
+  width: 20%;
+  float: left;
+  border: 1px solid black;
+  box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+#appointment_edit_wrapper {
+  height: 5vh;
+  width: 5%;
+  float: right;
+  border: 1px solid black;
+  box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+#appointment_note_wrapper {
+  height: 5vh;
+  width: 5%;
+  float: right;
+  border: 1px solid black;
+  box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+#appointment_delete {
+  height: 5vh;
+  width: 5%;
+  float: right;
+  border: 1px solid black;
+  box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.5);
+} 
+
+.profile_icons {
+  color: black;
+}
+
+.profile_icons:hover {
+  background-color: #757876;
+  transition: 200ms;
+}
+
+.appointment_service_icon {
+  margin-top: 1vh;
+  font-size: 25px;
+  border: none;
+  border-radius: 99px;
+  color: black;
+  background-color: white;
+}
+
+.appointment_service_icon:hover {
+  transition: 200ms;
+  cursor: pointer;
+}
+
+.edit_button {
+  height: 4vh;
+  width: 4vh;
+  margin-top: 1vh;
+  border-radius: 99px;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  font-size: 15px;
+  cursor: pointer;
+  box-shadow: 3px 3px 0px black;
+  transition: 200ms;
+}
+
+.edit_button:active {
+  transform: translateX(3px);
+  transform: translateY(3px);
+  box-shadow: 0px 0px 0px black;
+}
+

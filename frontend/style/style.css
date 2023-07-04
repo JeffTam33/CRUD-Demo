@@ -1,0 +1,243 @@
+/*
+  Colors
+  #2596be blue
+  #254abe blue darker
+  #25be9a turcoiseish 
+*/
+
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+}
+
+a {
+  font-weight: 500;
+  color: white;
+  text-decoration: inherit;
+}
+
+a:hover {
+  cursor: pointer;
+  color: white;
+  text-decoration: underline;
+}
+
+body {
+  margin: 0;
+  background-color: #8B8BAE;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.button_nav {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1e3370;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+.button_nav:hover {
+  border-color: #8B8BAE;
+}
+.button_nav:focus,
+.button_nav:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.button_hidden {
+  visibility: hidden;
+  height: 0px;
+  width: 0px;
+}
+
+#signout_button {
+  float: right;
+  margin: 10px;
+}
+
+#logo {
+  width: 10px;
+  height: 10px;
+}
+
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #25be9a;
+}
+
+.navlist {
+  float: left;
+  padding: 20px;
+  margin-left: 10px;
+  margin-top: 10px;
+  font-size: 25px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.navlist:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.account {
+  float: right;
+  padding: 10px
+}
+
+/* #banner_placement {
+  height: 206px;
+  width: 100%;
+}
+
+#under_banner {
+  position: absolute;
+  width: 100%;
+  background-color: #242424;
+  transition: 500ms;
+  opacity: 1;
+}
+
+#under_banner:hover {
+  opacity: 0;
+}
+
+#over_banner {
+  height: 206px;
+  width: 100%;
+  background-color: black;
+  position: absolute;
+}
+
+#banner {
+  display: flex;
+  width: auto;
+  margin: auto;
+  cursor: pointer;
+  text-align: center;
+} */
+
+.dentist_img {
+  height: 256px;
+  width: 256px;
+  margin: 10px 0px 10px 10px; 
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px black;
+}
+
+.team_name {
+  text-align: center;
+  font-size: 20px;
+}
+
+#home_content {
+  height: auto;
+  width: 100%;
+  background-color: #2596be;
+  color: #254abe;
+  font-family: 'Roboto', sans-serif;;
+}
+
+#home_content_title {
+  height: 8vh;
+  width: 50%;
+  margin: auto;
+  background-color: white;
+  margin-bottom: 25px;
+  border-radius: 15px;
+  border: 1px solid black;
+  box-shadow: 5px 5px 0px black;
+  transition: 200ms;
+}
+
+#home_content_title:hover {
+  transform: translateX(4px);
+  transform: translateY(4px);
+  box-shadow: 0px 0px 0px black;
+}
+
+.test-grid {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+}
+
+#team_header {
+  border: 1px solid black;
+}
+
+.team_member {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+#content_wrapper {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin: auto;
+  justify-content: center;
+}
+
+.content_text {
+  background-color: white;
+  border-radius: 20px;
+  height: auto;
+  width: 500px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr repeat(1, .25fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  margin: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 6px 6px 0px black;
+  transition: 200ms;
+}
+
+.content_text:hover {
+  transform: translateX(4px);
+  transform: translateY(4px);
+  box-shadow: 0px 0px 0px black;
+}
+
+p {
+  margin: 15px;
+}
+
+#footer {
+  height: auto;  
+  width: 100%;
+  background-color: #242424;
+  font-size: 25px;
+}
+
+#footer_content {
+  list-style: none;
+  text-align: center;
+  vertical-align: middle;
+}

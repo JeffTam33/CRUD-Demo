@@ -1,0 +1,79 @@
+#service_header_content {
+  height: 12vh;
+  background-color: white;
+  text-align: center;
+  font-size: 35px;
+}
+  
+#services_content {
+  height: auto;
+  width: 100%;
+  display: grid;
+  background-color: #254abe;
+  grid-template-columns: auto auto;
+  margin: auto;
+}
+
+.card {
+  display: grid;
+  height: auto;
+  width: auto;
+  background-color: rgba(255, 255, 255);
+  font-size: 20px;
+  margin: 5%;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 5px 5px 0px black;
+  justify-content: center;
+  align-items: center;
+  transition: 200ms;
+}
+
+.card:hover {
+  transform: translateX(4px);
+  transform: translateY(4px);
+  box-shadow: 0px 0px 0px black;
+}
+
+.service_heading {
+  text-align: center;
+}
+
+.info_list {
+  margin-top: 25px;
+}
+
+.schedule {
+  height: 6vh;
+  width: 9vw;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 3px 3px 0px black;
+  background-color: #4F1DCC;
+  margin: auto;
+  margin-bottom: 1vh;
+  cursor: pointer;
+}
+
+.schedule:hover {
+  background-color: #5d22f2;
+  transition: 200ms;
+}
+
+.schedule:after {
+  height: 6vh;
+  width: 9vw;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 4px 4px 0px black;
+  background-color: #4F1DCC;
+  margin: auto;
+  margin-bottom: 1vh;
+  cursor: pointer;
+}
+
+.schedule:active {
+  transform: translateX(4px);
+  transform: translateY(4px);
+  box-shadow: 0px 0px 0px black;
+}
