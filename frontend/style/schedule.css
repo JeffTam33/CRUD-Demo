@@ -27,11 +27,11 @@
 
 .user_inputs {
   height: 5vh;
+  width: 50%;
   border-radius: 5px;
   font-size: 18px;
   background-color: white;
   color: black;
-  width: 50%;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -131,4 +131,72 @@
 #time_title {
   font-size: 24px;
   width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+
+  #schedule_wrapper {
+    height: 50vh;
+    width: 70vw;
+  }
+  
+  .user_inputs {
+    height: 5vh;
+    width: 90%;
+    border-radius: 5px;
+    font-size: 18px;
+    background-color: white;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  #month_container {
+    float: left;
+    height: 100%;
+    width: 33%;
+  }
+
+  #schedule_submit {
+    height: 6vh;
+    width: 12vw;
+  }
+
+}
+
+
+
+@media screen and (max-width: 425px) {
+
+  #birthday_user_input {
+    display: grid;
+  }
+
+  #schedule_wrapper {
+    height: 70vh;
+    width: 70vw;
+  }
+
+  #schedule_submit {
+    width: 30vw;
+  }
+
+  #time_container {
+    margin-top: 16vh;
+  }
+  
+  #month_container {
+    margin: auto;
+    width: 100%;
+  }
+  
+  #day_container {
+    margin: auto;
+    width: 80%;
+  }
+  
+  #year_container {
+    margin: auto;
+    width: 80%;
+  }
+
 }

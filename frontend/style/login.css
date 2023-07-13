@@ -258,3 +258,86 @@
   text-align: center;
   font-size: 12px;
 }
+
+@media screen and (max-width: 1024px) {
+
+  #login_wrapper { 
+    height: 60vh;
+    width: 80vw;
+    margin: auto;
+    margin-top: 10vh;
+    background-color: white;
+    box-shadow: 3px 3px 0px black;
+    border: 1px solid black;
+    border-radius: 25px;
+    transition: 200ms;
+  }
+  
+  #login_button_wrapper {
+    height: 5vh;
+    width: 15vw;
+  }
+
+  #login_button {
+    height: 5vh;
+    width: 15vw;
+  }
+
+  #create_account_wrapper {
+    height: 5vh;
+    width: 30vw;
+  }
+  
+  #create_account_text {
+    margin: auto;
+  }
+
+  #warning_info {
+    height: 3vh;
+    width: auto;
+    font-size: 16px;
+    margin-bottom: 2vh;
+  }
+}
+
+@media screen and (max-width: 425px) {
+
+  #login_button_wrapper {
+    height: 5vh;
+    width: 15vw;
+  }
+
+  #login_button {
+    height: 5vh;
+    width: 15vw;
+    font-size: 14px;
+  }
+
+  #create_account_wrapper {
+    height: 5vh;
+    width: 70vw;
+  }
+  
+  #create_account_text {
+    margin: auto;
+    font-size: 14px;
+  }
+
+  .user_inputs {
+    margin-left: 10%;
+    height: 3vh;
+    width: 75%;
+  }
+
+  #password_input_wrapper {
+    margin-left: 10%;
+    width: 75%;
+  }
+
+  #visible_password_icon {
+    display: block;
+    height: 4vh;
+    width: 20%;
+  }
+  
+}

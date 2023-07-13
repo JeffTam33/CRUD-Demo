@@ -139,24 +139,7 @@
   border: 1px solid black;
   border-radius: 100px;
   box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
-  font-size: 25px;
-}
-
-.appointment_titles {
-  height: 3vh;
-  width: auto;
-  font-size: 25px;
-  text-indent: 9px;
-}
-
-#appointment_title_card {
-  height: 3vh;
-  width: 99%;;
-  margin: auto;
-  background-color: white;
-  color: #757876;
-  border-radius: 10px;
-  box-shadow: inset 1px 1px 9px rgba(0, 0, 0, 0.5);
+  font-size: 20px;
 }
 
 .appointment_card {
@@ -168,12 +151,11 @@
   color: black;
   border-radius: 5px;
   box-shadow: 4px 5px 9px rgba(0, 0, 0, 0.5);
-
 }
 
 #appointment_status {
   height: 5vh;
-  width: 4%;
+  width: 10%;
   float: left;
   border: 1px solid black;
   border-radius: 5px 0px 0px 5px;
@@ -184,7 +166,7 @@
   margin-top: 1vh;
 }
 
-#appointment_service_title {
+.appointment_titles {
   height: 5vh;
   width: 15%;
   float: left;
@@ -192,41 +174,17 @@
   box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
-#appointment_date_title {
-  height: 5vh;
-  width: 20%;
-  float: left;
-  border: 1px solid black;
-  box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.5);
-}
-
 #appointment_edit_wrapper {
-  height: 5vh;
-  width: 5%;
   float: right;
-  border: 1px solid black;
-  box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.5);
-}
-
-#appointment_note_wrapper {
-  height: 5vh;
-  width: 5%;
-  float: right;
-  border: 1px solid black;
-  box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
 #appointment_delete {
   height: 5vh;
-  width: 5%;
+  width: 15%;
   float: right;
   border: 1px solid black;
   box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.5);
 } 
-
-.profile_icons {
-  color: black;
-}
 
 .profile_icons:hover {
   background-color: #757876;
@@ -255,9 +213,9 @@
   background-color: white;
   color: black;
   border: 1px solid black;
+  box-shadow: 3px 3px 0px black;
   font-size: 15px;
   cursor: pointer;
-  box-shadow: 3px 3px 0px black;
   transition: 200ms;
 }
 
@@ -267,3 +225,98 @@
   box-shadow: 0px 0px 0px black;
 }
 
+@media screen and (max-width: 1024px) {
+  .appointment_titles {
+    display: flex;
+    height: 10vh;
+  }
+
+  #appointment_status {
+    display: flex;
+    height: 10vh;
+  }
+  
+  #appointment_delete {
+    display: flex;
+    height: 10vh;
+  } 
+
+  .appointment_service_text {
+    margin: auto;
+  }
+
+  .appointment_card {
+    height: 10vh;
+    font-size: 14px;
+  }
+
+  .appointment_service_icon {
+    height: 5vh;
+    width: 5vh;
+    margin: auto;
+  }
+
+
+  #appointment_status {
+    display: flex;
+  }
+  
+  #appointment_status_shape {
+    margin: auto;
+  }
+  
+}
+
+@media screen and (max-width: 1024px) {
+  #profile_wrapper {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  
+  #user_profile {
+    width: 90vw;
+    margin-bottom: 2vh;
+  }
+
+  #appointment_profile {
+    width: 90vw;
+  }
+
+  .appointment_card {
+    width: 90%;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+
+  .appointment_card{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+  }
+
+  .appointment_titles {
+    height: 5vh;
+    width: 100%;
+    float: left;
+  }
+  
+  #appointment_status {
+    height: 5vh;
+    width: 100%;
+  }
+  
+  #appointment_delete {
+    height: 5vh;
+    width: 100%;
+    float: right;
+  }
+
+  .appointment_service_icon {
+    height: 3vh;
+    width: 3vh;
+    margin: auto;
+  }
+
+}

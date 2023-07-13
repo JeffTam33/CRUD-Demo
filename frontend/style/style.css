@@ -231,6 +231,7 @@ p {
 */
 
 @media screen and (max-width: 768px) {
+
   #content_wrapper {
     grid-template-columns: auto;
   }
@@ -273,6 +274,7 @@ p {
 }
 
 @media screen and (max-width: 425px) {
+  
   .navlist {
     font-size: 12px;
   }

@@ -45,23 +45,23 @@ function appList() {
           </svg>
         </div>
 
-        <div id="appointment_service_title">
+        <div class="appointment_titles">
           <span class="appointment_service_text">${!userJson.appointments ? "N/A" : userJson.appointments[i].type}</span>
         </div>
 
-        <div id="appointment_date_title">
+        <div class="appointment_titles">
           <span class="appointment_service_text">${!userJson.appointments ? "N/A" : userJson.appointments[i].date}</span>
         </div>
 
-        <div id="appointment_date_title">
+        <div class="appointment_titles">
           <span class="appointment_service_text">${!userJson.appointments ? "N/A" : userJson.appointments[i].time}</span>
         </div>
 
-        <div class="profile_icons" id="appointment_delete">
+        <div class="profile_icons appointment_titles" id="appointment_delete">
           <button class="appointment_service_icon" id="appointment_obj${index}" value=${index}><i class="fa-solid fa-trash"></i></button>
         </div>
 
-        <div class="profile_icons" id="appointment_edit_wrapper">
+        <div class="profile_icons appointment_titles" id="appointment_edit_wrapper">
           <button class="appointment_service_icon"><i class="fa-regular fa-pen-to-square"></i></button>
         </div>
 
@@ -122,25 +122,15 @@ document.querySelector('#profile').innerHTML = `
     </div>
 
     <div id="appointment_profile">
-
       <div id="appointment_header_profile_wrapper">
         <span id="appointment_header_profile">Appointments:</span>
       </div>
       <br />     
-
-      <div id="appointment_title_card">
-        <span class="appointment_titles" style="float: left;">Stat</span>
-        <span class="appointment_titles" style="float: left; margin-left:5px;">Service</span>
-        <span class="appointment_titles" style="float: left; margin-left:90px;">Date</span>
-        <span class="appointment_titles" style="float: left; margin-left:190px;">Time</span>
-        <span class="appointment_titles" style="margin-right: 1vw; float:right;">Delete</span>
-        <span class="appointment_titles" style="margin-right: 1vw; float:right;">Edit</span>
-      </div>
-
       <div id="appointment_list_wrapper">
         ${appointmentElement}
       </div>
     </div>
+    
   </div>
 `
 
