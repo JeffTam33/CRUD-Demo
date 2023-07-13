@@ -5,11 +5,9 @@ document.querySelector('#header').innerHTML = `
   <div>
     <header>
       <ul class="navbar">
-        <li id="logo" class="navlist"><i class="fa-solid fa-fire" onclick="location.href = '../main.html';"></i></li>
         <li id="home-link" class="navlist"><a href="./index.html">Home</a></li>
         <li id="service-link" class="navlist"><a href="./service.html">Service</a></li>
-        <li class="navlist"><a href="./appointments.html">Appointments</a></li>
-
+        <li id="appointments" class="navlist"><a href="./appointments.html">Appointments</a></li>
         <li class="account">
           <button
             id="signout"
@@ -126,6 +124,7 @@ if(sessionStorage.getItem("userEmail")){
   document.getElementById("profile").className = "button_hidden";
 }
 
+//Sign user out
 document.getElementById("signout").addEventListener("click", function() {
   signOut();
 })

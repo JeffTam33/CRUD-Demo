@@ -5,10 +5,9 @@ document.querySelector('#header').innerHTML = `
   <div>
     <header>
       <ul class="navbar">
-        <li id="logo" class="navlist"><i class="fa-solid fa-fire"></i></li>
         <li id="home-link" class="navlist"><a href="./index.html">Home</a></li>
         <li id="service-link" class="navlist"><a href="./service.html">Service</a></li>
-        <li class="navlist"><a href="./appointments.html">Appointments</a></li>
+        <li id="appointments" class="navlist"><a href="./appointments.html">Appointments</a></li>
 
         <li class="account">
           <button 
@@ -44,20 +43,24 @@ document.querySelector('#header').innerHTML = `
 
 document.querySelector('#appointment_content').innerHTML = `
     <div id="appointment_container">
-      <div id ="appointment_content">
+      <div id="appointment_content">
         <div id="appointment_policy">
           <br />
-          <span style="font-size: 35px;">How to make an appointment</span>
-          <p>Online Appointment Booking:<br/> We offer the convenience of online appointment booking through our website. By creating an account, you can easily schedule and manage your dental appointments at your convenience. This online system provides real-time availability, allowing you to choose a time that suits your schedule. You can also receive appointment reminders and confirmations via email or text message.</p>
-          <p>Phone Appointment Booking:<br/> If you prefer to make an appointment by phone, our friendly receptionists are ready to assist you. Simply call our office during business hours, and they will guide you through the process, helping you find a suitable appointment time.</p>
-          <p>Late Appointment Fee:<br/> We kindly request that you arrive on time for your scheduled appointment. If you arrive late, we may need to reschedule your appointment to maintain our commitment to all patients. Additionally, if you fail to provide advance notice of cancellation or reschedule within 24 hours of your appointment, a late appointment fee may be applied.</p>
-          <p>Cancellation Policy:<br/> We understand that unforeseen circumstances may arise, requiring you to cancel or reschedule your appointment. We kindly ask that you provide at least 24 hours' notice for any changes to your appointment. This allows us to accommodate other patients who may be waiting for an available time slot. Failure to provide adequate notice may result in a late appointment fee.</p>
+          <h1>How to make an appointment</h1>
+          <h2>Online Appointment Booking:</h2>
+          <p>We offer the convenience of online appointment booking through our website. By creating an account, you can easily schedule and manage your dental appointments at your convenience. This online system provides real-time availability, allowing you to choose a time that suits your schedule. You can also receive appointment reminders and confirmations via email or text message.</p>
+          <h2>Phone Appointment Booking:</h2>
+          <p>If you prefer to make an appointment by phone, our friendly receptionists are ready to assist you. Simply call our office during business hours, and they will guide you through the process, helping you find a suitable appointment time.</p>
+          <h2>Late Appointment Fee:</h2>
+          <p>We kindly request that you arrive on time for your scheduled appointment. If you arrive late, we may need to reschedule your appointment to maintain our commitment to all patients. Additionally, if you fail to provide advance notice of cancellation or reschedule within 24 hours of your appointment, a late appointment fee may be applied.</p>
+          <h2>Cancellation Policy:</h2>
+          <p>We understand that unforeseen circumstances may arise, requiring you to cancel or reschedule your appointment. We kindly ask that you provide at least 24 hours' notice for any changes to your appointment. This allows us to accommodate other patients who may be waiting for an available time slot. Failure to provide adequate notice may result in a late appointment fee.</p>
         </div>
         <div id="appointment_insurance">
           <div>
           </div>
           <div id="appointment_list">
-            <ul>
+            <ul id="list_one">
               <li><a class="in_link" href="https://www.deltadental.com/" target="_blank">Delta Dental</a></li>
               <li><a class="in_link" hred="https://www.metlife.com/" target="_blank">MetLife Dental</a></li>
               <li><a class="in_link" href="https://www.cigna.com/" target="_blank">Cigna Dental</a></li>
@@ -69,7 +72,7 @@ document.querySelector('#appointment_content').innerHTML = `
               <li><a class="in_link" href="https://www.bcbs.com/" target="_blank">Blue Cross Blue Shield Dental</a></li>
               <li><a class="in_link" href="https://www.principal.com/" target="_blank">Principal Dental</a></li>
             </ul>
-            <ul>
+            <ul id="list_two">
               <li><a class="in_link" href="https://www.dnoa.com/" target="_blank">Dental Network of America (DNoA)</li>
               <li><a class="in_link" href="https://www.myrencoverage.com/ren/" target="_blank">Renaissance Dental</a></li>
               <li><a class="in_link" href="https://www.assurant.com/" target="_blank">Assurant Dental</a></li>

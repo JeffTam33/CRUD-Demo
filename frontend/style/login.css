@@ -5,7 +5,7 @@
 }
 
 #login_wrapper { 
-  height: 50vh;
+  height: 60vh;
   width: 40vw;
   margin: auto;
   margin-top: 10vh;
@@ -37,14 +37,9 @@
   color: #2196F3;
 }
 
-#forgot_password_wrapper {
-  height: 10vh;
-  width: 10vw;
-  background-color: #2196F3;
-}
-
 #create_account_wrapper {
-  height: 3vh;
+  display: flex;
+  height: 5vh;
   width: 15vw;
   margin: auto;
   margin-top: 3vh;
@@ -58,6 +53,10 @@
   border: 1px solid black;
   border-radius: 25px;
   transition: 200ms;
+}
+
+#create_account_text {
+  margin: auto;
 }
 
 #create_account_wrapper:hover {
@@ -78,20 +77,20 @@
 }
 
 #login_button_wrapper {
-  height: 4vh;
-  width: 4vw;
+  height: 5vh;
+  width: 5vw;
   margin: auto;
 }
 
 #login_button {
-  height: 4vh;
-  width: 4vw;
+  height: 5vh;
+  width: 5vw;
   border-radius: 99px;
   background-color: #87d5e1;
   color: black;
   border: 1px solid black;
   box-shadow: 3px 3px 0px black;
-  font-size: 15px;
+  font-size: 22px;
   cursor: pointer;
   transition: 200ms;
 }
@@ -206,6 +205,7 @@
   font-size: 24px;
   text-align: center;
   transition: 200ms;
+  margin-top: .5vh;
 }
 
 .tooltip {

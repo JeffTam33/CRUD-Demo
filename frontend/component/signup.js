@@ -1,17 +1,13 @@
 import '../style/style.css'
 import '../style/signup.css'
 
-
-let numOfDaysInMonths = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
-
 document.querySelector('#header').innerHTML = `
   <div>
     <header>
       <ul class="navbar">
-        <li id="logo" class="navlist"><i class="fa-solid fa-fire"></i></li>
         <li id="home-link" class="navlist"><a href="./index.html">Home</a></li>
         <li id="service-link" class="navlist"><a href="./service.html">Service</a></li>
-        <li class="navlist"><a href="./appointments.html">Appointments</a></li>
+        <li id="appointments" class="navlist"><a href="./appointments.html">Appointments</a></li>
 
         <li class="account">
           <button 
@@ -295,11 +291,6 @@ async function doesEmailExist(email) {
         console.log(error);
         return false;
       })
-
-  console.log("PPPPPPPPPPPPPPPPPPPPP")
-  console.log(emailBool);
-  console.log(await emailBool);
-  console.log("PPPPPPPPPPPPPPPPPPPPP")
   return !emailBool.result ? true : false;
 }
 
@@ -349,8 +340,6 @@ async function verifyUserInfo(username, email, password, phoneNum) {
   let emailVerify = await doesEmailExist(email);
   let passwordVerify = passwordStrength(password);
   let phoneNumVerify = formatPhoneNumber(phoneNum);
-
-  console.log(await emailVerify)
 
   if (!usernameVerify) {
     handleInvalidInput("username");
@@ -406,8 +395,6 @@ function formatPhoneNumber(phoneNumberString) {
   }
   return null;
 }
-
-console.log(sessionStorage.getItem("userEmail"));
 
 if(sessionStorage.getItem("userEmail")){
   document.getElementById("login").className = "button_hidden"

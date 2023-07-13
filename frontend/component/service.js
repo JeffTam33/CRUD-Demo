@@ -13,10 +13,9 @@ document.querySelector('#header').innerHTML = `
   <div>
     <header>
       <ul class="navbar">
-        <li id="logo" class="navlist"><i class="fa-solid fa-fire"></i></li>
         <li id="home-link" class="navlist"><a href="./index.html">Home</a></li>
         <li id="service-link" class="navlist"><a href="./service.html">Service</a></li>
-        <li class="navlist"><a href="./appointments.html">Appointments</a></li>
+        <li id="appointments" class="navlist"><a href="./appointments.html">Appointments</a></li>
 
         <li class="account">
           <button
@@ -55,16 +54,16 @@ document.querySelector('#service_content').innerHTML = `
   <div id="home_content">
     <div id="service_header_content">
       <br />
-      <span>Dental Services we offer</span>
+      <span id="service_heading_top">Dental Services we offer</span>
       <br />
       <br />
-      <span style="font-size: 25px;"> *Dental Services may not be covered by Insurance</span>
+      <span id="note_service" style="font-size: 25px; opacity: .8;"> *Dental Services may not be covered by Insurance</span>
     </div>
 
     <div id="services_content">
         <div class="card">
           <h3 class="service_heading">Dental Cleaning</h3>
-          <p>&#9;Regular dental cleaning is essential for maintaining optimal oral health. It is generally recommended to have a dental cleaning every six months, although the frequency may vary based on individual needs and the recommendation of your dentist or dental hygienist.</p>
+          <p>&#9;Regular dental cleaning is vital for oral health. Generally, a cleaning every six months is recommended, but individual needs and dentist's advice may alter the frequency.</p>
           <button class="schedule" id="schedule_cleaning">
             Schedule
           </button>
@@ -106,7 +105,7 @@ document.querySelector('#service_content').innerHTML = `
         </div>
         <div class="card">
           <h3 class="service_heading">Braces</h3>
-          <p>&#9;Misaligned teeth can make it difficult to clean your teeth properly, leading to plaque buildup, tooth decay, and gum disease. Braces can align your teeth, making it easier to brush and floss effectively, reducing the risk of dental problems and promoting better oral hygiene.</p>
+          <p>&#9;Misaligned teeth hinder proper cleaning, causing plaque, tooth decay, and gum disease. Braces align teeth, easing brushing and flossing, reducing dental issues, and promoting oral hygiene.</p>
           <button class="schedule" id="schedule_braces">
             Schedule
           </button>

@@ -7,10 +7,9 @@ document.querySelector('#header').innerHTML = `
   <div>
     <header>
       <ul class="navbar">
-        <li id="logo" class="navlist"><i class="fa-solid fa-fire"></i></li>
         <li id="home-link" class="navlist"><a href="./index.html">Home</a></li>
         <li id="service-link" class="navlist"><a href="./service.html">Service</a></li>
-        <li class="navlist"><a href="./appointments.html">Appointments</a></li>
+        <li id="appointments" class="navlist"><a href="./appointments.html">Appointments</a></li>
         <li class="account">
           <button 
             id="login" 
@@ -53,9 +52,8 @@ document.querySelector('#login_content').innerHTML = `
         </i>
       </div>
       <br />
-      <a class="account_links" id="login_header">Forgot Password?</a>
       <div id="login_button_wrapper">
-      <button id="login_button" onclick=${attemptAccess}>Login</button>
+        <button id="login_button" onclick=${attemptAccess}>Login</button>
       </div>
     </div>
     <div id="create_account_wrapper">

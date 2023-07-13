@@ -78,10 +78,9 @@ document.querySelector('#header').innerHTML = `
   <div>
     <header>
       <ul class="navbar">
-      <li id="logo" class="navlist"><i class="fa-solid fa-fire"></i></li>
       <li id="home-link" class="navlist"><a href="./index.html">Home</a></li>
       <li id="service-link" class="navlist"><a href="./service.html">Service</a></li>
-      <li class="navlist"><a href="./appointments.html">Appointments</a></li>
+      <li id="appointments" class="navlist"><a href="./appointments.html">Appointments</a></li>
 
       <li class="account">
         <button id="signout" class="button_nav">

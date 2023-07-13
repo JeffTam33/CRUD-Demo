@@ -1,10 +1,3 @@
-/*
-  Colors
-  #2596be blue
-  #254abe blue darker
-  #25be9a turcoiseish 
-*/
-
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -46,6 +39,7 @@ h1 {
 }
 
 .button_nav {
+  margin-top: 1vh;
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
@@ -75,11 +69,6 @@ h1 {
   margin: 10px;
 }
 
-#logo {
-  width: 10px;
-  height: 10px;
-}
-
 .navbar {
   list-style-type: none;
   margin: 0;
@@ -106,38 +95,6 @@ h1 {
   float: right;
   padding: 10px
 }
-
-/* #banner_placement {
-  height: 206px;
-  width: 100%;
-}
-
-#under_banner {
-  position: absolute;
-  width: 100%;
-  background-color: #242424;
-  transition: 500ms;
-  opacity: 1;
-}
-
-#under_banner:hover {
-  opacity: 0;
-}
-
-#over_banner {
-  height: 206px;
-  width: 100%;
-  background-color: black;
-  position: absolute;
-}
-
-#banner {
-  display: flex;
-  width: auto;
-  margin: auto;
-  cursor: pointer;
-  text-align: center;
-} */
 
 .dentist_img {
   height: 256px;
@@ -240,4 +197,93 @@ p {
   list-style: none;
   text-align: center;
   vertical-align: middle;
+}
+
+/*
+  For Large Laptops 1024px
+*/
+@media screen and (max-width: 1024px) {
+
+  #home_content_title {
+    height: 6vh;
+    width: 40%;
+    font-size: 12px;
+  }
+
+  .content_text {
+    height: auto;
+    width: 35vw;
+  }
+
+  .dentist_img {
+    height: 128px;
+    width: 128px;
+  }
+
+  .team_member {
+    font-size: 12px;
+    font-weight: 500;
+  }
+}
+
+/*
+  For Tablets 768px
+*/
+
+@media screen and (max-width: 768px) {
+  #content_wrapper {
+    grid-template-columns: auto;
+  }
+
+  #home_content_title {
+    height: 8vh;
+    width: 30vw;
+    font-size: 10px;
+  }
+
+  .content_text {
+    height: auto;
+    width: 70vw;
+  }
+
+  .navlist {
+    font-size: 20px;
+    margin-left: 0px;
+  }
+
+}
+
+/*
+  Compress nav bar
+*/
+@media screen and (max-width: 586px) {
+  .navlist {
+    font-size: 16px;
+    padding: 9px;
+    margin-top: 2vh;
+  }
+  
+  .button_nav {
+    padding: 12px;
+  }
+
+  #signout {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .navlist {
+    font-size: 12px;
+  }
+
+  #home_content_title {
+    height: 8vh;
+    width: 50vw;
+    font-size: 10px;
+  }
+
+  #footer {
+    font-size: 16px;
+  }
 }
